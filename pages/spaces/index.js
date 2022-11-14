@@ -1,11 +1,13 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { Calendar } from "react-calendar";
 import styles from "../../styles/Home.module.css";
 export default function Home() {
-  const route = useRouter()
-  const handleTileSelection=()=>{
-    route.push('/')
-  }
+  const route = useRouter();
+  const handleTileSelection = () => {
+    // route.push("/");
+    return <Calendar />;
+  };
   return (
     <div>
       <Head>
